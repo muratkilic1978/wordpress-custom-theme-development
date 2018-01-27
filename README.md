@@ -19,3 +19,5 @@ This is a step-by-step guide that demonstrate how you easily can built an wordpr
 7. Go to line *66* that begins with _$table_prefix  = 'wp\_'_ and override the text inside the quote that says _'wp\_'_ with a table-prefix name eg. **wp_custom_theme**.
 ### Step 8 is only for MAC-users 
 8. Go to line *20* and insert following text **define('FS_METHOD', 'direct');**. This will enable WordPress to download themes and and plugins from Internet without using FTP-settings in WordPress.
+
+# Step03  - 
