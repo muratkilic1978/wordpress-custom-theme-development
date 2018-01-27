@@ -16,6 +16,6 @@ This is a step-by-step guide that demonstrate how you easily can built an wordpr
 4. Go to line *26* that begins with _define('DB_USER', 'username_here')_ and override the text inside the quote that says _'username_here'_ with your own username. If you have a MAMP then your default username is **root** and if you have XAMPP then your default username is **root**
 5. Go to line *29* that begins with _define('DB_PASSWORD', 'password_here')_ and override the text inside the quote that says _'password_here'_ with either **root** if you have a MAMP on your machine or blank if you XAMMP on your machine. **Blank** is the same as keeping the quotes empty.
 6. Go to line *44* that begins with *You can generate these using the {@link **https://api.wordpress.org/secret-key/1.1/salt/** WordPress.org secret-key service}* and copy the url into your browser. Copy the code snippet on the screen and go back to the file **wp-config.php**. Select now line line  49 to 56 and paste the code-snippet in your memory here.
-7. Go to line *66* that begins with _$table_prefix  = 'wp\_'_ and override the text inside the quote that says _'wp_'_ with a table-prefix name eg. **wp_custom-theme**.
+7. Go to line *66* that begins with _$table_prefix  = 'wp\_'_ and override the text inside the quote that says _'wp\_'_ with a table-prefix name eg. **wp_custom-theme**.
 
 
