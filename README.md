@@ -68,6 +68,7 @@ while (have_posts()) {
 ?>
 ```
 3. Finally I created **page.php** file and this file is used when an individual Page is queried. Here is the code for **page.php**:
+```PHP
 <?php
 
 while (have_posts()) {
@@ -78,3 +79,4 @@ while (have_posts()) {
 <?php the_content(); ?>
 
 <?php }
+```
