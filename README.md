@@ -90,7 +90,7 @@ while (have_posts()) {
 ```HTML
 <p>Greetings from footer.php</p>
 ```
-5. Now go and edit **index.php** and add **get_header();** on top of the file and **get_footer();** on bottomline in the file. Here is the code for **index.php**:
+5. Now go and edit **index.php** and add **get_header();** on top of the file and add **get_footer();** on bottomline in the file. Here is the code for **index.php**:
 ```PHP
 \\<?php get_header();
 
@@ -104,4 +104,20 @@ while (have_posts()) {
 
     \\get_footer();
 ?>
+```
+6. Repeat the same procedure where you add **get_header();** on first line in the file and add **get_footer();** on last line in both files **page.php** and **single.php**.
+Here is the code for **page.php**:
+```PHP
+<?php
+    get_header();
+    while (have_posts()) {
+        the_post(); ?>
+    <h1>This is a page not a post</h1>
+    <h2><?php the_title(); ?></h2>
+    <?php the_content(); ?>
+
+
+<?php }
+    get_footer();
+?
 ```
