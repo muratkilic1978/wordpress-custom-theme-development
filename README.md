@@ -15,7 +15,7 @@ This is a step-by-step guide that demonstrate how you easily can built an wordpr
 8. Go to line *29* that begins with _define('DB_PASSWORD', 'password_here')_ and override the text inside the quote that says _'password_here'_ with either **root** if you have a MAMP on your machine or blank if you XAMMP on your machine. **Blank** is the same as keeping the quotes empty.
 9. Go to line *44* that begins with *You can generate these using the {@link **https://api.wordpress.org/secret-key/1.1/salt/** WordPress.org secret-key service}* and copy the url into your browser. Copy the code snippet on the screen and go back to the file **wp-config.php**. Select now line line  49 to 56 and paste the code-snippet in your memory here.
 10. Go to line *66* that begins with _$table_prefix  = 'wp\_'_ and override the text inside the quote that says _'wp\_'_ with a table-prefix name eg. **wp_custom_theme**.
-#### Step 11 is only for MAC-users 
+#### This is only for MAC-users 
 11. Go to line *20* and insert following text **define('FS_METHOD', 'direct');**. This will enable WordPress to download themes and and plugins from Internet without using FTP-settings in WordPress.
 
 ### Step02  - Creating a new theme
