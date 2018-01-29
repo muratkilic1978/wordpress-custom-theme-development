@@ -37,8 +37,8 @@ License: GNU General Public License v2 or later
 5. Go and edit index.php by entering some text eg. **This is my amazing WordPress custom theme**
 6. Log into your WordPress account and click on **Themes** and activate your new custom theme **University Theme**. Next go to the left top corner and click on **Visit Site**. You will for the first time see your new custom theme.
 
-#### The Famaous Loop in WordPress
-7. I have updated my **index.php** file inside my WordPress custom theme folder *wp-content/themes/university-theme* with a PHP While-loop. I am looping through all blog-posts inside WordPress and displaying them. Here is the newly updated code inside **index.php**
+### Step03 - The Famaous Loop in WordPress
+1. Go and update **index.php** file inside my WordPress custom theme folder *wp-content/themes/university-theme* with a PHP While-loop. I am looping through all blog-posts inside WordPress and displaying them. Here is the newly updated code inside **index.php**
 ```PHP
 <?php
 
@@ -52,7 +52,7 @@ while (have_posts()) {
 <?php }
 ?>
 ```
-8. I also created **single.php** file. The single post template file is used when a single post is queried. For this and all other query templates, index.php is used if the query template is not present. Here is the code for **single.php** file:
+2. Then create a new file **single.php**. The *single* post template file is used when a single post is queried. For this and all other query templates, index.php is used if the query template is not present. Here is the code for **single.php** file:
 ```PHP
 <?php
 
@@ -65,7 +65,7 @@ while (have_posts()) {
 <?php }
 ?>
 ```
-8. Finally I created **page.php** file and this file is used when an individual Page is queried. Here is the code for **page.php**:
+3. Finally go and create following file **page.php**. This file is used when an individual Page is queried. Here is the code for **page.php**:
 ```PHP
 <?php
 
