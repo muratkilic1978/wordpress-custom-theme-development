@@ -90,7 +90,7 @@ while (have_posts()) {
 ```HTML
 <p>Greetings from footer.php</p>
 ```
-5. Now go and edit **index.php** and add **get_header();**on top of the file and **get_footer();** on bottomline in the file. Here is the code for **index.php**:
+5. Now go and edit **index.php** and add **get_header();** on top of the file and **get_footer();** on bottomline in the file. Here is the code for **index.php**:
 ```PHP
 \\<?php get_header();
 
