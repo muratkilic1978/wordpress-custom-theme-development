@@ -105,7 +105,7 @@ while (have_posts()) {
     \\get_footer();
 ?>
 ```
-6. Repeat the same procedure where you add **get_header();** on first line in the file and add **get_footer();** on last line in both files **page.php** and **single.php**.
+6. Repeat the same procedure where you add **get_header();** on first line and add **get_footer();** on last line in both files **page.php** and **single.php**.
 Here is the code for **page.php**:
 ```PHP
 <?php
@@ -119,5 +119,5 @@ Here is the code for **page.php**:
 
 <?php }
     get_footer();
-?
+?>
 ```
