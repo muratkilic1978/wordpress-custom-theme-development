@@ -37,7 +37,7 @@ License: GNU General Public License v2 or later
 5. Go and edit index.php by entering some text eg. **This is my amazing WordPress custom theme**
 6. Log into your WordPress account and click on **Themes** and activate your new custom theme **University Theme**. Next go to the left top corner and click on **Visit Site**. You will for the first time see your new custom theme.
 
-#### Step03  - The Famaous Loop in WordPress
+#### The Famaous Loop in WordPress
 7. I have updated my **index.php** file inside my WordPress custom theme folder *wp-content/themes/university-theme* with a PHP While-loop. I am looping through all blog-posts inside WordPress and displaying them. Here is the newly updated code inside **index.php**
 ```PHP
 <?php
