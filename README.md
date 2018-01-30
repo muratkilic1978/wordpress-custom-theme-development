@@ -170,3 +170,133 @@ add_action('wp_enqueue_scripts','university_files');
 }
 ```
 
+### Step06 - Convert statis HTML Template into WordPress
+1. Go and download a static HTML Template that is already made from github.com. Here is the URL: **https://github.com/LearnWebCode/university-static**
+2. After having downloaded all static files from github.com, you get foolowing folders and files:
+- CSS *folder*
+- JS *folder*
+- Images *folder*
+- index.html *file*
+- interior-page.html *file*
+- style.css *file*
+3. Go and open **index.html** with your favorite editor and cut out following code from **index.html** file:
+```HTML
+  <header class="site-header">
+    <div class="container">
+      <h1 class="school-logo-text float-left"><a href="#"><strong>Fictional</strong> University</a></h1>
+      <span class="js-search-trigger site-header__search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
+      <i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i>
+      <div class="site-header__menu group">
+        <nav class="main-navigation">
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Programs</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Campuses</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </nav>
+        <div class="site-header__util">
+          <a href="#" class="btn btn--small btn--orange float-left push-right">Login</a>
+          <a href="#" class="btn btn--small  btn--dark-orange float-left">Sign Up</a>
+          <span class="search-trigger js-search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
+        </div>
+      </div>
+    </div>
+  </header>
+```
+4. Paste the previous code-snippet into **header.php** file inside your WordPress custom theme folder *wp-content/themes/university-theme*.
+Here is the updated *header.php* file:
+```PHP
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <?php wp_head(); ?>
+    <meta charset="UTF-8">
+    <title>Business Academy Aarhus</title>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="school-logo-text float-left"><a href="#"><strong>Fictional</strong> University</a></h1>
+      <span class="js-search-trigger site-header__search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
+      <i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i>
+      <div class="site-header__menu group">
+        <nav class="main-navigation">
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Programs</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Campuses</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </nav>
+        <div class="site-header__util">
+          <a href="#" class="btn btn--small btn--orange float-left push-right">Login</a>
+          <a href="#" class="btn btn--small  btn--dark-orange float-left">Sign Up</a>
+          <span class="search-trigger js-search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
+        </div>
+      </div>
+    </div>
+  </header>
+```
+5. Go and open **index.html** again with your favorite editor and cut out following code from **index.html** file:
+```PHP
+
+  <footer class="site-footer">
+
+    <div class="site-footer__inner container container--narrow">
+
+      <div class="group">
+
+        <div class="site-footer__col-one">
+          <h1 class="school-logo-text school-logo-text--alt-color"><a href="#"><strong>Fictional</strong> University</a></h1>
+          <p><a class="site-footer__link" href="#">555.555.5555</a></p>
+        </div>
+
+        <div class="site-footer__col-two-three-group">
+          <div class="site-footer__col-two">
+            <h3 class="headline headline--small">Explore</h3>
+            <nav class="nav-list">
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Programs</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Campuses</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="site-footer__col-three">
+            <h3 class="headline headline--small">Learn</h3>
+            <nav class="nav-list">
+              <ul>
+                <li><a href="#">Legal</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="site-footer__col-four">
+          <h3 class="headline headline--small">Connect With Us</h3>
+          <nav>
+            <ul class="min-list social-icons-list group">
+              <li><a href="#" class="social-color-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="#" class="social-color-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#" class="social-color-youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+              <li><a href="#" class="social-color-linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+              <li><a href="#" class="social-color-instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+```
+6. Go and paste the previous code-snippet into **footer.php** file inside your WordPress custom theme folder *wp-content/themes/university-theme*.
+Here is the updated *footer.php* file:
+
+7.
