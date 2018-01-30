@@ -170,9 +170,11 @@ add_action('wp_enqueue_scripts','university_files');
 }
 ```
 
-### Step06 - Convert statis HTML Template into WordPress
-1. Go and download a static HTML Template that is already made from github.com. Here is the URL: **https://github.com/LearnWebCode/university-static**
-2. After having downloaded all static files from github.com, you get foolowing folders and files:
+### Step06 - Convert static HTML Template into WordPress
+1. Go and download a static HTML Template that is already made from github.com. \* A Special thank to Brad Schiff owner of
+LearnWebCode for inspiring me to make this WordPress Custom Theme tutorial-guide.
+Here is the URL to the static HTML source-code from LearnWebCode By Brad Schiff.: **https://github.com/LearnWebCode/university-static**
+2. After having downloaded all static files from github.com, you now have following folders and files:
 - CSS *folder*
 - JS *folder*
 - Images *folder*
@@ -298,5 +300,63 @@ Here is the updated *header.php* file:
 ```
 6. Go and paste the previous code-snippet into **footer.php** file inside your WordPress custom theme folder *wp-content/themes/university-theme*.
 Here is the updated *footer.php* file:
+```PHP
 
-7.
+  <footer class="site-footer">
+
+    <div class="site-footer__inner container container--narrow">
+
+      <div class="group">
+
+        <div class="site-footer__col-one">
+          <h1 class="school-logo-text school-logo-text--alt-color"><a href="#"><strong>Fictional</strong> University</a></h1>
+          <p><a class="site-footer__link" href="#">555.555.5555</a></p>
+        </div>
+
+        <div class="site-footer__col-two-three-group">
+          <div class="site-footer__col-two">
+            <h3 class="headline headline--small">Explore</h3>
+            <nav class="nav-list">
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Programs</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Campuses</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="site-footer__col-three">
+            <h3 class="headline headline--small">Learn</h3>
+            <nav class="nav-list">
+              <ul>
+                <li><a href="#">Legal</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="site-footer__col-four">
+          <h3 class="headline headline--small">Connect With Us</h3>
+          <nav>
+            <ul class="min-list social-icons-list group">
+              <li><a href="#" class="social-color-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="#" class="social-color-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#" class="social-color-youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+              <li><a href="#" class="social-color-linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+              <li><a href="#" class="social-color-instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+<?php wp_footer(); ?>
+</body>
+</html>
+```
+7. Go and open the **style.css** file with your favorite editor and cut out following code from **index.html** file:
