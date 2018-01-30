@@ -136,7 +136,7 @@ Here is the updated *header.php* file:
 <body>
 ```
 
-2. Next go and update **footer.php** file with closing **</body>** and closing **</HTML>** tag. Lastly go and add **wp_footer();** function just before the closing **</head>** tag.
+2. Next go and update **footer.php** file with closing **</body>** and closing **</HTML>** tag. Lastly go and add **wp_footer();** function just before the closing **</head>** tag. *wp_footer();* is commonly used by WordPres to Very commonly used to insert web statistics code, such as Google Analytics. 
 Here is the updated *footer.php* file:
 ```PHP
 
@@ -163,7 +163,7 @@ add_action('wp_enqueue_scripts','university_files');
 ?>
 ```
 
-4. Finally go and update your style.css file with a selector taht makes the font-color *forestgreen*. Here is the updated code for **style**:
+4. Finally go and update your style.css file with a selector that makes the font-color *forestgreen*. Here is the updated code for **style.css**:
 ```CSS
 * {
     color: forestgreen;
