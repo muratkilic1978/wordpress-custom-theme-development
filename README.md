@@ -136,7 +136,7 @@ Here is the updated *header.php* file:
 <body>
 ```
 
-2. Next go and update **footer.php** file with closing **</body>** and closing **</HTML>** tag. Lastly go and add **wp_footer();** function just before the closing **</head>** tag. *wp_footer();* is commonly used by WordPres to Very commonly used to insert web statistics code, such as Google Analytics. 
+2. Next go and update **footer.php** file with closing *</body>* tag and closing *</HTML>* tag. Lastly go and add **wp_footer();** function just before the closing **</head>** tag. *wp_footer();* is commonly used by WordPres to Very commonly used to insert web statistics code, such as Google Analytics. 
 Here is the updated *footer.php* file:
 ```PHP
 
