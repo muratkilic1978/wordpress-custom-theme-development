@@ -1,1 +1,8 @@
-<h1>Greeting from header.php</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <?php wp_head(); ?>
+    <meta charset="UTF-8">
+    <title>Business Academy Aarhus</title>
+</head>
+<body>
