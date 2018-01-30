@@ -361,5 +361,17 @@ Here is the updated *footer.php* file:
 ```
 7. Go and open the **style.css** file that you just downloaded from github.com with your favorite editor.
 8. Mark all code in the *style.css* file and copy and paste it into to your style.css inside your WordPress custom theme folder *wp-content/themes/university-theme/*.
+9. Now go and check the website by clicking on the Dashboard inside WordPress and then click on *visit site*. We now see that the website looks much nicer than before.
+10. Next go and open the **functions.php** inside your WordPress custom theme folder *wp-content/themes/university-theme/*. and attach font-awesome icons to your custom theme. Add following php-code inside your **functions.php**.
+Here is the updated *functions.php* file:
+```PHP
+<?php
 
+function university_files() {
 
+   wp_enqueue_style('font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'); wp_enqueue_style('university_main_styles',get_stylesheet_uri());
+}
+
+add_action('wp_enqueue_scripts','university_files');
+?>
+```
