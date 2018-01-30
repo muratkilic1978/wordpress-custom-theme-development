@@ -122,18 +122,34 @@ Here is the code for **page.php**:
 ?>
 ```
 ### Step05 - Load style.css and update header.php and footer.php files
-1.
+1. Go and update **header.php** file with **<DOCTYPE>**, begin **<HEAD>** tag, and closing **</HEAD>** tag and finally a begin **<body>** tag. Lastly go and add **wp_head();** function just after the begin **<head>** tag.
+Here is the updated *header.php* file:
 
-2.
+```PHP
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <?php wp_head(); ?>
+    <meta charset="UTF-8">
+    <title>Business Academy Aarhus</title>
+</head>
+<body>
+```
 
-3.
+2. Next go and update **footer.php** file with closing **</body>** and closing **</HTML>** tag. Lastly go and add **wp_footer();** function just before the closing **</head>** tag.
+Here is the updated *footer.php* file:
+```PHP
 
-4.
+<?php wp_footer(); ?>
+</body>
+</html>
+```
 
-5. Go and create a new **functions.php** php file inside your WordPress custom theme folder *wp-content/themes/university-theme*. The default WordPress theme contains a *functions.php* file that defines many of features. Suggested uses for this file:
+3. Go and create a new **functions.php** php file inside your WordPress custom theme folder *wp-content/themes/university-theme*. The default WordPress theme contains a *functions.php* file that defines many of features. Suggested uses for this file:
 - Enqueue theme stylesheets and scripts. 
 - Enable Theme Features such as Sidebars, Navigation Menus, Post Thumbnails, Post Formats, Custom Headers, Custom Backgrounds and others.
 - Define functions used in several template files of your theme.
+
 The following line of php code enables to attach the *style.css* file to the custom theme.
 Here is the code for **functions.php**:
 ```PHP
@@ -147,7 +163,7 @@ add_action('wp_enqueue_scripts','university_files');
 ?>
 ```
 
-6. Finally go and update your style.css file with a selector taht makes the font-color *forestgreen*. Here is the updated code for **style**:
+4. Finally go and update your style.css file with a selector taht makes the font-color *forestgreen*. Here is the updated code for **style**:
 ```CSS
 * {
     color: forestgreen;
