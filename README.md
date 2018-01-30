@@ -130,7 +130,22 @@ Here is the code for **page.php**:
 
 4.
 
-5.
+5. Go and create a new **functions.php** php file inside your WordPress custom theme folder *wp-content/themes/university-theme*. The default WordPress theme contains a *functions.php* file that defines many of features. Suggested uses for this file:
+..*Enqueue theme stylesheets and scripts. 
+..*Enable Theme Features such as Sidebars, Navigation Menus, Post Thumbnails, Post Formats, Custom Headers, Custom Backgrounds and others.
+..*Define functions used in several template files of your theme.
+The following line of php code enables to attach the *style.css* file to the custom theme.
+Here is the code for **functions.php**:
+```PHP
+<?php
+
+function university_files() {
+    wp_enqueue_style('university_main_styles',get_stylesheet_uri());
+}
+
+add_action('wp_enqueue_scripts','university_files');
+?>
+```
 
 6. Finally go and update your style.css file with a selector taht makes the font-color *forestgreen*. Here is the updated code for **style**:
 ```CSS
