@@ -359,4 +359,7 @@ Here is the updated *footer.php* file:
 </body>
 </html>
 ```
-7. Go and open the **style.css** file with your favorite editor and cut out following code from **index.html** file:
+7. Go and open the **style.css** file that you just downloaded from github.com with your favorite editor.
+8. Mark all code in the *style.css* file and copy and paste it into to your style.css inside your WordPress custom theme folder *wp-content/themes/university-theme/*.
+
+
