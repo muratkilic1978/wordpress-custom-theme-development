@@ -121,3 +121,19 @@ Here is the code for **page.php**:
     get_footer();
 ?>
 ```
+### Step05 - Load style.css and update header.php and footer.php files
+1.
+
+2.
+
+3.
+
+4.
+
+5.
+
+6. Finally go and update your style.css file with a selector taht makes the font-color *forestgreen*. Here is the updated code for **style**:
+```CSS
+* {
+    color: forestgreen;
+}````
