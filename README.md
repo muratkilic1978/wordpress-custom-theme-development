@@ -131,9 +131,9 @@ Here is the code for **page.php**:
 4.
 
 5. Go and create a new **functions.php** php file inside your WordPress custom theme folder *wp-content/themes/university-theme*. The default WordPress theme contains a *functions.php* file that defines many of features. Suggested uses for this file:
-..* Enqueue theme stylesheets and scripts. 
-..* Enable Theme Features such as Sidebars, Navigation Menus, Post Thumbnails, Post Formats, Custom Headers, Custom Backgrounds and others.
-..* Define functions used in several template files of your theme.
+- Enqueue theme stylesheets and scripts. 
+- Enable Theme Features such as Sidebars, Navigation Menus, Post Thumbnails, Post Formats, Custom Headers, Custom Backgrounds and others.
+- Define functions used in several template files of your theme.
 The following line of php code enables to attach the *style.css* file to the custom theme.
 Here is the code for **functions.php**:
 ```PHP
