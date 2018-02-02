@@ -378,3 +378,22 @@ function university_files() {
 add_action('wp_enqueue_scripts','university_files');
 ?>
 ```
+11. Now go and open the **functions.php** again inside your WordPress custom theme folder *wp-content/themes/university-theme/*. This time I will add a custom Google font to our Custom WordPress Theme. Add following php-code inside your **functions.php**.
+Here is the updated *functions.php* file:
+```PHP
+<?php
+
+function university_files() {
+   \# Load custom Google Font into WordPress custom theme 
+   wp_enqueue_style('custom-google-font', "https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i"); 
+   
+   \# Load the main style.css into WordPress custom theme 
+   wp_enqueue_style('font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'); 
+   
+   \# Load font-awesome icons into WordPress custom theme
+   wp_enqueue_style('university_main_styles',get_stylesheet_uri());
+}
+
+add_action('wp_enqueue_scripts','university_files');
+?>
+```
