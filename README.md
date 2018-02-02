@@ -368,8 +368,10 @@ Here is the updated *functions.php* file:
 <?php
 
 function university_files() {
-
+   \# Load the main style.css into WordPress custom theme 
    wp_enqueue_style('font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'); 
+   
+   \# Load font-awesome icons into WordPress custom theme
    wp_enqueue_style('university_main_styles',get_stylesheet_uri());
 }
 
