@@ -621,3 +621,24 @@ Here is the updated **index.php** file:
     get_footer();
 ?>
 ```
+15. If you go and update your WordPress website you will now see that we are missing the images. Go to the static HTML source-code that we have downloaded back in *step 01*. Copy the *images* folder and *js* folder and *css* folder and paste the three folders into your WordPress custom theme folder *wp-content/themes/university-theme*.
+
+16. Now jump into the **index.php* file and open it with your favorite editor. Go and find the following *HTML-tag*:
+```HTML
+<div class="page-banner__bg-image" style="background-image: url(images/library-hero.jpg);"></div>
+```
+And replace it with the following code:
+```PHP
+<div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri('/images/library-hero.jpg') ?>);"></div>
+```
+
+17. Let's do the same thing on the bottom of the page. Go and find the following three *HTML-tags*:
+```PHP
+<div class="hero-slider__slide" style="background-image: url(images/bus.jpg);">
+
+<div class="hero-slider__slide" style="background-image: url(images/apples.jpg);">
+
+<div class="hero-slider__slide" style="background-image: url(images/bread.jpg);">
+```
+
+And replace it with the following code:
